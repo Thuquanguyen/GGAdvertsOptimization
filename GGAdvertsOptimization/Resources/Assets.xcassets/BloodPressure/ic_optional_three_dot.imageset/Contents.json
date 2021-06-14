@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "ic_optional_three_dot.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BaseTabBarCell" customModule="Y_Te_Benh_Nhan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jV5-Vy-0t5">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EgM-Mj-T65">
+                                <rect key="frame" x="0.0" y="25" width="50" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                                <color key="textColor" name="color_text_main_29_45_73"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EgM-Mj-T65" firstAttribute="leading" secondItem="jV5-Vy-0t5" secondAttribute="leading" id="5C7-tu-R4A"/>
+                            <constraint firstAttribute="trailing" secondItem="EgM-Mj-T65" secondAttribute="trailing" id="RpG-44-g9I"/>
+                            <constraint firstItem="EgM-Mj-T65" firstAttribute="centerY" secondItem="jV5-Vy-0t5" secondAttribute="centerY" id="d2I-uf-JSI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jV5-Vy-0t5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="I9u-bn-9YW"/>
+                <constraint firstAttribute="bottom" secondItem="jV5-Vy-0t5" secondAttribute="bottom" id="RAu-ez-as4"/>
+                <constraint firstAttribute="trailing" secondItem="jV5-Vy-0t5" secondAttribute="trailing" id="Tgu-bW-Em3"/>
+                <constraint firstItem="jV5-Vy-0t5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="sw5-22-Hp0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="label" destination="EgM-Mj-T65" id="XUi-XN-usw"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="140"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color_text_main_29_45_73">
+            <color red="0.11372549019607843" green="0.17647058823529413" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoDataView" customModule="Y_Te_Benh_Nhan" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAdd" destination="OIB-rj-Z2m" id="x2K-b5-W41"/>
+                <outlet property="detailLabel" destination="JdK-LQ-LT0" id="BON-e6-HRi"/>
+                <outlet property="imageView" destination="BOS-we-1fd" id="Atd-kR-ptF"/>
+                <outlet property="titleLabel" destination="TB0-0F-Lnq" id="0bW-Yg-JH4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="469"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_nodata" translatesAutoresizingMaskIntoConstraints="NO" id="BOS-we-1fd">
+                    <rect key="frame" x="8" y="109" width="406" height="203"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="BOS-we-1fd" secondAttribute="height" multiplier="2" id="Z8L-Fe-rYd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Không tìm thấy kết quả" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TB0-0F-Lnq">
+                    <rect key="frame" x="8" y="322" width="406" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                    <color key="textColor" red="0.14509803921568626" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Rất tiếc, chúng tôi không tìm thấy kết quả nào phù hợp" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdK-LQ-LT0">
+                    <rect key="frame" x="61.333333333333343" y="351" width="299.66666666666663" height="33.666666666666686"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIB-rj-Z2m">
+                    <rect key="frame" x="64" y="400.66666666666669" width="294" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="setBorderColor">
+                            <color key="value" red="0.4549019608" green="0.87843137250000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="setBorderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="OIB-rj-Z2m" firstAttribute="top" secondItem="JdK-LQ-LT0" secondAttribute="bottom" constant="16" id="DFZ-Iq-ikN"/>
+                <constraint firstItem="OIB-rj-Z2m" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="E1a-kT-hB4"/>
+                <constraint firstItem="JdK-LQ-LT0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="K6k-fu-eDa"/>
+                <constraint firstItem="BOS-we-1fd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="109" id="L92-0X-SyD"/>
+                <constraint firstItem="BOS-we-1fd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="M4A-6C-Bfd"/>
+                <constraint firstItem="OIB-rj-Z2m" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="64" id="SOc-Go-3dV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JdK-LQ-LT0" secondAttribute="trailing" constant="36" id="Scj-zX-6hM"/>
+                <constraint firstItem="TB0-0F-Lnq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TAk-cg-Q11"/>
+                <constraint firstItem="JdK-LQ-LT0" firstAttribute="top" secondItem="TB0-0F-Lnq" secondAttribute="bottom" constant="5" id="YXx-z3-jnQ"/>
+                <constraint firstItem="TB0-0F-Lnq" firstAttribute="top" secondItem="BOS-we-1fd" secondAttribute="bottom" constant="10" id="bhf-Zg-3g9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BOS-we-1fd" secondAttribute="trailing" constant="8" id="fBt-sq-UEd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TB0-0F-Lnq" secondAttribute="trailing" constant="8" id="hiS-CU-7Y7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="3.6684782608695654"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_nodata" width="100" height="100"/>
+    </resources>
+</document>

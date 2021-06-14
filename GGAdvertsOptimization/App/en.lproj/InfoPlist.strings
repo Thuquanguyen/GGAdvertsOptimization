@@ -1,0 +1,17 @@
+/* 
+  InfoPlist.strings
+  AIC Utilities People
+
+  Created by TrungHD-D1-M on 8/19/19.
+  Copyright © 2019 Rikkeisoft. All rights reserved.
+*/
+
+
+
+"NSCameraUsageDescription" = "Allow this app access your camera to take photos to send feedback and post comments";
+"NSContactsUsageDescription" = "Allow this app access your contact to smart virtual assistant supports you better";
+"NSLocationWhenInUseUsageDescription" = "Allow this app access your location to find places and utilities around you";
+"NSLocationAlwaysUsageDescription" = "Allow this app access your location to find places and utilities around you";
+"NSMicrophoneUsageDescription" = "Allow this app access your micro to help you chat with smart virtual assistant";
+"NSPhotoLibraryAddUsageDescription" = "Allow this app access your library to pick photos to send feedback and post comments";
+"NSPhotoLibraryUsageDescription" = "Allow this app access your library to pick photos to send feedback and post comments";

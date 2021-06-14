@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomePageVC" customModule="Y_Te_Benh_Nhan" customModuleProvider="target">
+            <connections>
+                <outlet property="imageContent" destination="l1O-WC-2Fy" id="arb-0r-NUL"/>
+                <outlet property="labelContent" destination="O4n-uZ-sSt" id="AS5-Za-RYt"/>
+                <outlet property="labelTitle" destination="IfJ-Oj-mLF" id="EHQ-8c-NiE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="441"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l1O-WC-2Fy">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="363"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FMx-vE-uaG">
+                    <rect key="frame" x="30" y="383" width="354" height="48"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfJ-Oj-mLF">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="19"/>
+                            <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lựa chọn bác sĩ tư vấn thích hợp" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4n-uZ-sSt">
+                            <rect key="frame" x="0.0" y="29" width="354" height="19"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="l1O-WC-2Fy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="26H-S4-MfU"/>
+                <constraint firstAttribute="trailing" secondItem="FMx-vE-uaG" secondAttribute="trailing" constant="30" id="8sl-Sq-jdA"/>
+                <constraint firstItem="l1O-WC-2Fy" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BWa-dr-gFZ"/>
+                <constraint firstItem="FMx-vE-uaG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Cbd-4i-UnL"/>
+                <constraint firstItem="FMx-vE-uaG" firstAttribute="top" secondItem="l1O-WC-2Fy" secondAttribute="bottom" constant="20" id="E0P-ak-qkS"/>
+                <constraint firstAttribute="bottom" secondItem="FMx-vE-uaG" secondAttribute="bottom" constant="10" id="ds0-G7-Zor"/>
+                <constraint firstItem="l1O-WC-2Fy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kmh-Vn-0ra"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="123.54910714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
