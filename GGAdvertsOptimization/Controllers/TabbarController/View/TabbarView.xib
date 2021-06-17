@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -19,7 +20,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabbarView" customModule="Ourhealth" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabbarView" customModule="Y_Te_Benh_Nhan" customModuleProvider="target">
             <connections>
                 <outlet property="button0" destination="DLR-xS-erz" id="nHP-pR-jb8"/>
                 <outlet property="button1" destination="xkV-R9-3IK" id="4rZ-Qh-kYc"/>
@@ -52,12 +53,6 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tSd-Uz-jbc">
                             <rect key="frame" x="0.0" y="0.0" width="109.5" height="60"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLR-xS-erz">
-                                    <rect key="frame" x="0.0" y="0.0" width="109.5" height="60"/>
-                                    <connections>
-                                        <action selector="didClickButton:" destination="-1" eventType="touchUpInside" id="fH7-ji-DwB"/>
-                                    </connections>
-                                </button>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D4d-Lg-FrK">
                                     <rect key="frame" x="42.5" y="11" width="25" height="25"/>
                                     <constraints>
@@ -72,9 +67,15 @@
                                         <constraint firstAttribute="height" constant="18" id="Th1-gX-t0f"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="8"/>
-                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" red="0.20784313730000001" green="0.2470588235" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLR-xS-erz">
+                                    <rect key="frame" x="0.0" y="0.0" width="109.5" height="60"/>
+                                    <connections>
+                                        <action selector="didClickButton:" destination="-1" eventType="touchUpInside" id="fH7-ji-DwB"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -91,12 +92,6 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9p1-c2-ebf">
                             <rect key="frame" x="109.5" y="0.0" width="109.5" height="60"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkV-R9-3IK">
-                                    <rect key="frame" x="0.0" y="0.0" width="109.5" height="60"/>
-                                    <connections>
-                                        <action selector="didClickButton:" destination="-1" eventType="touchUpInside" id="N8g-70-mhT"/>
-                                    </connections>
-                                </button>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TNp-So-6PB">
                                     <rect key="frame" x="42.5" y="11" width="25" height="25"/>
                                     <constraints>
@@ -105,7 +100,7 @@
                                         <constraint firstAttribute="width" secondItem="TNp-So-6PB" secondAttribute="height" id="iZa-eA-xus"/>
                                     </constraints>
                                 </imageView>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7q-my-hms">
+                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7q-my-hms">
                                     <rect key="frame" x="61.5" y="5" width="15" height="15"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s71-Mp-fqA">
@@ -115,7 +110,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" systemColor="systemRedColor"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="s71-Mp-fqA" secondAttribute="trailing" constant="3" id="6NA-pZ-Jmy"/>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="15" id="Tq2-Gc-Dyq"/>
@@ -135,9 +130,15 @@
                                         <constraint firstAttribute="height" constant="18" id="xer-CD-WU3"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="10"/>
-                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" red="0.20784313730000001" green="0.2470588235" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkV-R9-3IK">
+                                    <rect key="frame" x="0.0" y="0.0" width="109.5" height="60"/>
+                                    <connections>
+                                        <action selector="didClickButton:" destination="-1" eventType="touchUpInside" id="N8g-70-mhT"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -182,10 +183,10 @@
                                         <constraint firstAttribute="height" constant="18" id="8hU-1y-e7m"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="10"/>
-                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" red="0.20784313730000001" green="0.2470588235" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IxL-x2-vEP">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IxL-x2-vEP">
                                     <rect key="frame" x="0.0" y="0.0" width="110" height="60"/>
                                     <connections>
                                         <action selector="didClickButton:" destination="-1" eventType="touchUpInside" id="iZs-oB-OTf"/>
@@ -207,12 +208,6 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ccc-gy-hUC">
                             <rect key="frame" x="329" y="0.0" width="109.5" height="60"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHZ-eH-CoQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="109.5" height="60"/>
-                                    <connections>
-                                        <action selector="didClickButton:" destination="-1" eventType="touchUpInside" id="GrA-ng-dgO"/>
-                                    </connections>
-                                </button>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cY0-PA-d1g">
                                     <rect key="frame" x="42" y="11" width="25" height="25"/>
                                     <constraints>
@@ -227,9 +222,15 @@
                                         <constraint firstAttribute="height" constant="18" id="aui-Tt-GUr"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="10"/>
-                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" red="0.20784313730000001" green="0.2470588235" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHZ-eH-CoQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="109.5" height="60"/>
+                                    <connections>
+                                        <action selector="didClickButton:" destination="-1" eventType="touchUpInside" id="GrA-ng-dgO"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -246,12 +247,6 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZF-jh-E1u">
                             <rect key="frame" x="438.5" y="0.0" width="109.5" height="60"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sj3-7p-oKb">
-                                    <rect key="frame" x="0.0" y="0.0" width="109.5" height="60"/>
-                                    <connections>
-                                        <action selector="didClickButton:" destination="-1" eventType="touchUpInside" id="HbX-xy-OnT"/>
-                                    </connections>
-                                </button>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nkh-3R-fbY">
                                     <rect key="frame" x="42" y="11" width="25" height="25"/>
                                     <constraints>
@@ -266,9 +261,15 @@
                                         <constraint firstAttribute="height" constant="18" id="wJc-fv-sCz"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="10"/>
-                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="textColor" red="0.20784313730000001" green="0.2470588235" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sj3-7p-oKb">
+                                    <rect key="frame" x="0.0" y="0.0" width="109.5" height="60"/>
+                                    <connections>
+                                        <action selector="didClickButton:" destination="-1" eventType="touchUpInside" id="HbX-xy-OnT"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -283,7 +284,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.14117647059999999" green="0.1450980392" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="Ccc-gy-hUC" firstAttribute="width" secondItem="8r8-zo-Dwe" secondAttribute="width" id="0Wd-CO-hmX"/>
                         <constraint firstAttribute="bottom" secondItem="8r8-zo-Dwe" secondAttribute="bottom" id="4k1-DI-0Lv"/>
@@ -310,6 +311,7 @@
                     </constraints>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="D3X-Kd-Mxw"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="D3X-Kd-Mxw" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GP9-eB-wFV" secondAttribute="bottom" id="Rtz-1h-op7"/>
@@ -318,8 +320,12 @@
                 <constraint firstItem="GP9-eB-wFV" firstAttribute="trailing" secondItem="Z7z-RZ-8gw" secondAttribute="trailing" id="hmX-zZ-bI7"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="D3X-Kd-Mxw"/>
-            <point key="canvasLocation" x="579.20000000000005" y="104.34782608695653"/>
+            <point key="canvasLocation" x="254" y="125"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

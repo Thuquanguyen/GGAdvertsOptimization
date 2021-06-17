@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184744F7267B98A800D436A4 /* ArticlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184744F5267B98A800D436A4 /* ArticlCell.swift */; };
+		184744F8267B98A800D436A4 /* ArticlCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184744F6267B98A800D436A4 /* ArticlCell.xib */; };
+		184744FB267B98B000D436A4 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184744FA267B98B000D436A4 /* ArticleModel.swift */; };
+		1847450B267B9D0C00D436A4 /* article_4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 184744FF267B9D0B00D436A4 /* article_4.pdf */; };
+		1847450C267B9D0C00D436A4 /* article_5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 18474500267B9D0B00D436A4 /* article_5.pdf */; };
+		1847450D267B9D0C00D436A4 /* article_7.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 18474501267B9D0B00D436A4 /* article_7.pdf */; };
+		1847450E267B9D0C00D436A4 /* article_8.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 18474502267B9D0B00D436A4 /* article_8.pdf */; };
+		1847450F267B9D0C00D436A4 /* article_12.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 18474503267B9D0B00D436A4 /* article_12.pdf */; };
+		18474510267B9D0C00D436A4 /* article_1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 18474504267B9D0C00D436A4 /* article_1.pdf */; };
+		18474511267B9D0C00D436A4 /* article_6.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 18474505267B9D0C00D436A4 /* article_6.pdf */; };
+		18474512267B9D0C00D436A4 /* article_10.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 18474506267B9D0C00D436A4 /* article_10.pdf */; };
+		18474513267B9D0C00D436A4 /* article_3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 18474507267B9D0C00D436A4 /* article_3.pdf */; };
+		18474514267B9D0C00D436A4 /* article_9.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 18474508267B9D0C00D436A4 /* article_9.pdf */; };
+		18474515267B9D0C00D436A4 /* article_11.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 18474509267B9D0C00D436A4 /* article_11.pdf */; };
+		18474516267B9D0C00D436A4 /* article_2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1847450A267B9D0C00D436A4 /* article_2.pdf */; };
+		1847451B267BA09F00D436A4 /* ArticleDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18474519267BA09F00D436A4 /* ArticleDetailVC.swift */; };
+		1847451C267BA09F00D436A4 /* ArticleDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1847451A267BA09F00D436A4 /* ArticleDetailVC.xib */; };
+		18474558267BA7FC00D436A4 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18474556267BA7FC00D436A4 /* NotificationVC.swift */; };
+		18474559267BA7FC00D436A4 /* NotificationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18474557267BA7FC00D436A4 /* NotificationVC.xib */; };
+		184866DB267BAC1F001C9BCE /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184866D9267BAC1F001C9BCE /* QuestionVC.swift */; };
+		184866DC267BAC1F001C9BCE /* QuestionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184866DA267BAC1F001C9BCE /* QuestionVC.xib */; };
+		184866E0267BAC2B001C9BCE /* CreateCampainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184866DE267BAC2B001C9BCE /* CreateCampainVC.swift */; };
+		184866E1267BAC2B001C9BCE /* CreateCampainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184866DF267BAC2B001C9BCE /* CreateCampainVC.xib */; };
+		184866E5267BAC42001C9BCE /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184866E3267BAC42001C9BCE /* SettingVC.swift */; };
+		184866E6267BAC42001C9BCE /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184866E4267BAC42001C9BCE /* SettingVC.xib */; };
+		184866EB267BAD33001C9BCE /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184866EA267BAD33001C9BCE /* QuestionModel.swift */; };
+		184866F0267BADA8001C9BCE /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184866EE267BADA8001C9BCE /* QuestionCell.swift */; };
+		184866F1267BADA8001C9BCE /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184866EF267BADA8001C9BCE /* QuestionCell.xib */; };
 		18B2A0802677C3B7006A877C /* LoginSucessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2A07E2677C3B7006A877C /* LoginSucessVC.swift */; };
 		18B2A0812677C3B7006A877C /* LoginSucessVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A07F2677C3B7006A877C /* LoginSucessVC.xib */; };
 		2303399C228121CB00B26575 /* Georgia Regular font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23033992228121CA00B26575 /* Georgia Regular font.ttf */; };
@@ -506,6 +534,34 @@
 
 /* Begin PBXFileReference section */
 		16D366FB6FF9B9A4974FA77B /* Pods-Yte-PROD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yte-PROD.debug.xcconfig"; path = "Target Support Files/Pods-Yte-PROD/Pods-Yte-PROD.debug.xcconfig"; sourceTree = "<group>"; };
+		184744F5267B98A800D436A4 /* ArticlCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlCell.swift; sourceTree = "<group>"; };
+		184744F6267B98A800D436A4 /* ArticlCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticlCell.xib; sourceTree = "<group>"; };
+		184744FA267B98B000D436A4 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		184744FF267B9D0B00D436A4 /* article_4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = article_4.pdf; sourceTree = "<group>"; };
+		18474500267B9D0B00D436A4 /* article_5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = article_5.pdf; sourceTree = "<group>"; };
+		18474501267B9D0B00D436A4 /* article_7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = article_7.pdf; sourceTree = "<group>"; };
+		18474502267B9D0B00D436A4 /* article_8.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = article_8.pdf; sourceTree = "<group>"; };
+		18474503267B9D0B00D436A4 /* article_12.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = article_12.pdf; sourceTree = "<group>"; };
+		18474504267B9D0C00D436A4 /* article_1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = article_1.pdf; sourceTree = "<group>"; };
+		18474505267B9D0C00D436A4 /* article_6.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = article_6.pdf; sourceTree = "<group>"; };
+		18474506267B9D0C00D436A4 /* article_10.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = article_10.pdf; sourceTree = "<group>"; };
+		18474507267B9D0C00D436A4 /* article_3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = article_3.pdf; sourceTree = "<group>"; };
+		18474508267B9D0C00D436A4 /* article_9.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = article_9.pdf; sourceTree = "<group>"; };
+		18474509267B9D0C00D436A4 /* article_11.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = article_11.pdf; sourceTree = "<group>"; };
+		1847450A267B9D0C00D436A4 /* article_2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = article_2.pdf; sourceTree = "<group>"; };
+		18474519267BA09F00D436A4 /* ArticleDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailVC.swift; sourceTree = "<group>"; };
+		1847451A267BA09F00D436A4 /* ArticleDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleDetailVC.xib; sourceTree = "<group>"; };
+		18474556267BA7FC00D436A4 /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		18474557267BA7FC00D436A4 /* NotificationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationVC.xib; sourceTree = "<group>"; };
+		184866D9267BAC1F001C9BCE /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
+		184866DA267BAC1F001C9BCE /* QuestionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionVC.xib; sourceTree = "<group>"; };
+		184866DE267BAC2B001C9BCE /* CreateCampainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCampainVC.swift; sourceTree = "<group>"; };
+		184866DF267BAC2B001C9BCE /* CreateCampainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateCampainVC.xib; sourceTree = "<group>"; };
+		184866E3267BAC42001C9BCE /* SettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		184866E4267BAC42001C9BCE /* SettingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
+		184866EA267BAD33001C9BCE /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		184866EE267BADA8001C9BCE /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		184866EF267BADA8001C9BCE /* QuestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
 		18B2A07E2677C3B7006A877C /* LoginSucessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSucessVC.swift; sourceTree = "<group>"; };
 		18B2A07F2677C3B7006A877C /* LoginSucessVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginSucessVC.xib; sourceTree = "<group>"; };
 		23033992228121CA00B26575 /* Georgia Regular font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Georgia Regular font.ttf"; sourceTree = "<group>"; };
@@ -1016,6 +1072,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		184744F3267B988100D436A4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				184744F5267B98A800D436A4 /* ArticlCell.swift */,
+				184744F6267B98A800D436A4 /* ArticlCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		184744F4267B988D00D436A4 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				184744FA267B98B000D436A4 /* ArticleModel.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		184744FE267B9CBE00D436A4 /* pdf */ = {
+			isa = PBXGroup;
+			children = (
+				18474504267B9D0C00D436A4 /* article_1.pdf */,
+				1847450A267B9D0C00D436A4 /* article_2.pdf */,
+				18474507267B9D0C00D436A4 /* article_3.pdf */,
+				184744FF267B9D0B00D436A4 /* article_4.pdf */,
+				18474500267B9D0B00D436A4 /* article_5.pdf */,
+				18474505267B9D0C00D436A4 /* article_6.pdf */,
+				18474501267B9D0B00D436A4 /* article_7.pdf */,
+				18474502267B9D0B00D436A4 /* article_8.pdf */,
+				18474508267B9D0C00D436A4 /* article_9.pdf */,
+				18474506267B9D0C00D436A4 /* article_10.pdf */,
+				18474509267B9D0C00D436A4 /* article_11.pdf */,
+				18474503267B9D0B00D436A4 /* article_12.pdf */,
+			);
+			path = pdf;
+			sourceTree = "<group>";
+		};
+		18474518267BA08C00D436A4 /* ArticleDetail */ = {
+			isa = PBXGroup;
+			children = (
+				18474519267BA09F00D436A4 /* ArticleDetailVC.swift */,
+				1847451A267BA09F00D436A4 /* ArticleDetailVC.xib */,
+			);
+			path = ArticleDetail;
+			sourceTree = "<group>";
+		};
+		18474555267BA7E800D436A4 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				18474556267BA7FC00D436A4 /* NotificationVC.swift */,
+				18474557267BA7FC00D436A4 /* NotificationVC.xib */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		184866D6267BABFC001C9BCE /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				184866E3267BAC42001C9BCE /* SettingVC.swift */,
+				184866E4267BAC42001C9BCE /* SettingVC.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		184866D7267BAC02001C9BCE /* CreateCampain */ = {
+			isa = PBXGroup;
+			children = (
+				184866DE267BAC2B001C9BCE /* CreateCampainVC.swift */,
+				184866DF267BAC2B001C9BCE /* CreateCampainVC.xib */,
+			);
+			path = CreateCampain;
+			sourceTree = "<group>";
+		};
+		184866D8267BAC0D001C9BCE /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				184866E9267BAD26001C9BCE /* Class */,
+				184866E8267BAD1E001C9BCE /* Cell */,
+				184866D9267BAC1F001C9BCE /* QuestionVC.swift */,
+				184866DA267BAC1F001C9BCE /* QuestionVC.xib */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		184866E8267BAD1E001C9BCE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				184866EE267BADA8001C9BCE /* QuestionCell.swift */,
+				184866EF267BADA8001C9BCE /* QuestionCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		184866E9267BAD26001C9BCE /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				184866EA267BAD33001C9BCE /* QuestionModel.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		18B2A07C2677C39E006A877C /* LoginSucess */ = {
 			isa = PBXGroup;
 			children = (
@@ -1198,6 +1354,9 @@
 		978A05A124820016007443C6 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				18474518267BA08C00D436A4 /* ArticleDetail */,
+				184744F4267B988D00D436A4 /* Class */,
+				184744F3267B988100D436A4 /* Cell */,
 				CA3C52E6247E48A600DA3309 /* HomePageVC.xib */,
 				CA3C52E7247E48A600DA3309 /* HomePageVC.swift */,
 			);
@@ -1629,6 +1788,7 @@
 		A5C5C68A228032BD0090F3A0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				184744FE267B9CBE00D436A4 /* pdf */,
 				F7CB4C13228AB0D4007D7A3B /* Gif */,
 				A5C5C68C228033070090F3A0 /* Font */,
 				F76FAAF0228AADCE003A6618 /* Localizable.strings */,
@@ -2326,6 +2486,10 @@
 		CA3C52E5247E48A600DA3309 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				184866D8267BAC0D001C9BCE /* Question */,
+				184866D7267BAC02001C9BCE /* CreateCampain */,
+				184866D6267BABFC001C9BCE /* Setting */,
+				18474555267BA7E800D436A4 /* Notification */,
 				978A05A124820016007443C6 /* Home */,
 			);
 			path = HomePage;
@@ -2861,12 +3025,16 @@
 				97617D1E248E1E3E0048B0E9 /* BaseTabBarCell.xib in Resources */,
 				A5C5C6CD228033070090F3A0 /* LatoLatin-HeavyItalic.ttf in Resources */,
 				CA3C5309247E48B300DA3309 /* Roboto-Thin.ttf in Resources */,
+				184866E1267BAC2B001C9BCE /* CreateCampainVC.xib in Resources */,
+				1847450F267B9D0C00D436A4 /* article_12.pdf in Resources */,
 				A5C5C6D0228033070090F3A0 /* LatoLatin-Medium.ttf in Resources */,
 				A235DC7D22807E190051F601 /* RadioCell.xib in Resources */,
 				CA3C530F247E505000DA3309 /* WelcomePageVC.xib in Resources */,
 				A5C5C6B8228033070090F3A0 /* Lato-Thin.ttf in Resources */,
+				184866DC267BAC1F001C9BCE /* QuestionVC.xib in Resources */,
 				A5C5C886228033DF0090F3A0 /* LoadingView.xib in Resources */,
 				F7CB4C15228AB0DD007D7A3B /* chat_bot_typing.gif in Resources */,
+				1847450E267B9D0C00D436A4 /* article_8.pdf in Resources */,
 				A5C5C6BF228033070090F3A0 /* Lato-BlackItalic.ttf in Resources */,
 				230339A3228121CB00B26575 /* georgiai.ttf in Resources */,
 				D1A1DD2523D0DE8500BEDE5B /* NavigationView.xib in Resources */,
@@ -2874,11 +3042,14 @@
 				2303399E228121CB00B26575 /* Georgia.ttf in Resources */,
 				CA3C52DD247E102300DA3309 /* WelcomeVC.xib in Resources */,
 				A5B78A2D228D00E5003E1BAB /* MarkerView.xib in Resources */,
+				18474559267BA7FC00D436A4 /* NotificationVC.xib in Resources */,
 				A51830A82283C81600E2E35B /* MonthAndYearPickerViewController.xib in Resources */,
 				A5C5C6D8228033070090F3A0 /* LatoLatin-Heavy.ttf in Resources */,
 				D1497660230A4AF7008E8F5B /* InfoPlist.strings in Resources */,
 				D16C89BA22B35FA700F5ED93 /* DefaultNavigationView.xib in Resources */,
+				1847450B267B9D0C00D436A4 /* article_4.pdf in Resources */,
 				9E3A9CA822AE41B0003381F6 /* OpinionView.xib in Resources */,
+				1847451C267BA09F00D436A4 /* ArticleDetailVC.xib in Resources */,
 				A5C5C6BC228033070090F3A0 /* Lato-HairlineItalic.ttf in Resources */,
 				D14EFB2522B0AEF9003D4FE4 /* SearchNavigationView.xib in Resources */,
 				D1A93E5A22A51B9A00554C3E /* DefaultFilterShowResultButtonView.xib in Resources */,
@@ -2886,9 +3057,11 @@
 				A51830AC2283C81600E2E35B /* TextPicker.xib in Resources */,
 				D1BD6C9022AE33DC00F0E064 /* NewsNavigationView.xib in Resources */,
 				A5C5C6BB228033070090F3A0 /* Lato-SemiboldItalic.ttf in Resources */,
+				18474515267B9D0C00D436A4 /* article_11.pdf in Resources */,
 				230339A5228121CB00B26575 /* georgia italic.ttf in Resources */,
 				FD38B95822855AB400A1114E /* Assets.xcassets in Resources */,
 				2303399D228121CB00B26575 /* georgia bold.ttf in Resources */,
+				184866E6267BAC42001C9BCE /* SettingVC.xib in Resources */,
 				CA5274F9248755F5003EAB2E /* PopupAlertImageVC.xib in Resources */,
 				D16C89B622B3463D00F5ED93 /* LargeTitleHeaderView.xib in Resources */,
 				D1A93E6722A53BB300554C3E /* DefaultFilterDropdownDetailTableViewCell.xib in Resources */,
@@ -2899,6 +3072,7 @@
 				A51830D32283D7FC00E2E35B /* CustomNaviBar.xib in Resources */,
 				A5C5C6C2228033070090F3A0 /* Lato-Heavy.ttf in Resources */,
 				A5C5C6C1228033070090F3A0 /* Lato-MediumItalic.ttf in Resources */,
+				18474514267B9D0C00D436A4 /* article_9.pdf in Resources */,
 				CA3C5305247E48B300DA3309 /* Roboto-Italic.ttf in Resources */,
 				A5BA15932286ADE300EA5BDA /* CustomTextView.xib in Resources */,
 				A50D531322F819D800169F3C /* RangeSeekFillterCell.xib in Resources */,
@@ -2906,6 +3080,7 @@
 				CA3C52FB247E48B300DA3309 /* Roboto-Regular.ttf in Resources */,
 				230339A2228121CB00B26575 /* Georgia Bold Italic font.ttf in Resources */,
 				CA3EFCEE24D285210003D0D5 /* SplashShowAlertVesion.xib in Resources */,
+				18474512267B9D0C00D436A4 /* article_10.pdf in Resources */,
 				CA3C5303247E48B300DA3309 /* Roboto-LightItalic.ttf in Resources */,
 				F76FAAEE228AADCE003A6618 /* Localizable.strings in Resources */,
 				A2D3B5DB2285893A002B8062 /* PickerDialog.xib in Resources */,
@@ -2937,6 +3112,8 @@
 				18B2A0812677C3B7006A877C /* LoginSucessVC.xib in Resources */,
 				A235DC61228066B70051F601 /* SearchBarView.xib in Resources */,
 				CA3E04DA2480F49D001D8F67 /* PopupAlertVC.xib in Resources */,
+				184744F8267B98A800D436A4 /* ArticlCell.xib in Resources */,
+				18474513267B9D0C00D436A4 /* article_3.pdf in Resources */,
 				A5C5C6C8228033070090F3A0 /* LatoLatin-SemiboldItalic.ttf in Resources */,
 				CA3C52F7247E48B300DA3309 /* Roboto-Medium.ttf in Resources */,
 				A5C5C6D1228033070090F3A0 /* LatoLatin-MediumItalic.ttf in Resources */,
@@ -2950,8 +3127,12 @@
 				A5C5C6BD228033070090F3A0 /* Lato-Regular.ttf in Resources */,
 				97504ECD24BD8F5F009DF5F8 /* NoDataView.xib in Resources */,
 				A5C5C6CB228033070090F3A0 /* LatoLatin-Semibold.ttf in Resources */,
+				18474510267B9D0C00D436A4 /* article_1.pdf in Resources */,
 				97617D28248E1E510048B0E9 /* PDFViewController.xib in Resources */,
+				18474511267B9D0C00D436A4 /* article_6.pdf in Resources */,
+				184866F1267BADA8001C9BCE /* QuestionCell.xib in Resources */,
 				979F93C42480C77300A7619A /* TabbarView.xib in Resources */,
+				1847450C267B9D0C00D436A4 /* article_5.pdf in Resources */,
 				979F93CB2480C81C00A7619A /* TabbarVC.xib in Resources */,
 				CA3C5307247E48B300DA3309 /* Roboto-Bold.ttf in Resources */,
 				A5C5C6CC228033070090F3A0 /* LatoLatin-LightItalic.ttf in Resources */,
@@ -2969,6 +3150,8 @@
 				A5C5C6C5228033070090F3A0 /* Lato-Medium.ttf in Resources */,
 				CA3C52FF247E48B300DA3309 /* Roboto-ThinItalic.ttf in Resources */,
 				A5C5C6D6228033070090F3A0 /* LatoLatin-Regular.ttf in Resources */,
+				1847450D267B9D0C00D436A4 /* article_7.pdf in Resources */,
+				18474516267B9D0C00D436A4 /* article_2.pdf in Resources */,
 				A5C5C6B7228033070090F3A0 /* Lato-LightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3104,6 +3287,7 @@
 				A5C5C7DE228033920090F3A0 /* UILabel+Extension.swift in Sources */,
 				9796D46424C83AC500DDC2D1 /* UIButton.swift in Sources */,
 				243CDD1D24829039006A4868 /* SegmentControl.swift in Sources */,
+				184866E5267BAC42001C9BCE /* SettingVC.swift in Sources */,
 				CA04422622C4AC50007CC3C4 /* ESRefreshProtocol.swift in Sources */,
 				A51830A72283C81600E2E35B /* BasePicker.swift in Sources */,
 				D19619A922AA5C1E00800258 /* DefaultFilterTickTableViewCell.swift in Sources */,
@@ -3170,6 +3354,7 @@
 				CA3F27DA248F2C1200030232 /* LivePreviewViewController.swift in Sources */,
 				A5C5C7CE228033920090F3A0 /* TapActionView.swift in Sources */,
 				CA04422522C4AC50007CC3C4 /* ESRefreshFooterAnimator.swift in Sources */,
+				184744FB267B98B000D436A4 /* ArticleModel.swift in Sources */,
 				D1873757229D387F00C7EA44 /* MainChildVCProtocol.swift in Sources */,
 				A5C5C73D2280336E0090F3A0 /* APIResponse.swift in Sources */,
 				9EB76AC422B3579C00BBF6E4 /* DropDownLanguageView.swift in Sources */,
@@ -3278,6 +3463,7 @@
 				A5C5C7D4228033920090F3A0 /* UIFont+Extension.swift in Sources */,
 				CA3F27C4248F2C1200030232 /* ImagePickerController+Albums.swift in Sources */,
 				9796D49124C83AD200DDC2D1 /* PreviewImageUtils.swift in Sources */,
+				1847451B267BA09F00D436A4 /* ArticleDetailVC.swift in Sources */,
 				A5C5C7D2228033920090F3A0 /* ShadowView.swift in Sources */,
 				A5C5C818228033BA0090F3A0 /* NotiCenterName.swift in Sources */,
 				9796D46024C83AC500DDC2D1 /* UIBezierPath.swift in Sources */,
@@ -3305,6 +3491,8 @@
 				A5C5C7402280336E0090F3A0 /* APIDispatcherProtocol.swift in Sources */,
 				9796D46C24C83AC500DDC2D1 /* Bool.swift in Sources */,
 				D13CE373244D505400CAF859 /* TableDataSource.swift in Sources */,
+				184866E0267BAC2B001C9BCE /* CreateCampainVC.swift in Sources */,
+				184744F7267B98A800D436A4 /* ArticlCell.swift in Sources */,
 				CA3F2802248F2C1200030232 /* ZoomInteractionController.swift in Sources */,
 				230339D92281BB5700B26575 /* NotificationEnum.swift in Sources */,
 				A5C5C73F2280336E0090F3A0 /* APIDispatcher.swift in Sources */,
@@ -3341,6 +3529,7 @@
 				9E3B4FA122AFC073007AFDB9 /* RadioOptionView.swift in Sources */,
 				AB2A37C7234474AD0088E3DD /* ReactionSelector.swift in Sources */,
 				CA04422222C4AC50007CC3C4 /* ESRefreshComponent.swift in Sources */,
+				184866EB267BAD33001C9BCE /* QuestionModel.swift in Sources */,
 				A235DC60228066B70051F601 /* SearchBarView.swift in Sources */,
 				CA26D198247FAC6700F96890 /* UserManager.swift in Sources */,
 				9796D48224C83AC500DDC2D1 /* GalleryViewController.swift in Sources */,
@@ -3356,6 +3545,7 @@
 				CA2E6378247D2A9300A20D9F /* ESTabBarItem.swift in Sources */,
 				CA2E637B247D2A9300A20D9F /* ESTabBarItemBadgeView.swift in Sources */,
 				237E13082293DF2D00074753 /* FirebaseTopicType.swift in Sources */,
+				184866DB267BAC1F001C9BCE /* QuestionVC.swift in Sources */,
 				97504ECB24BD8F5F009DF5F8 /* NoDataView.swift in Sources */,
 				9796D45024C83AC500DDC2D1 /* ThumbnailsViewController.swift in Sources */,
 				D16C89B422B3463400F5ED93 /* LargeTitleHeaderView.swift in Sources */,
@@ -3369,6 +3559,7 @@
 				CA3F27CA248F2C1200030232 /* CGSize+Scale.swift in Sources */,
 				A5B78A25228CFAB8003E1BAB /* TextFieldSearch.swift in Sources */,
 				D1CA669A229FCAE200E53965 /* ImageThumbnailRemovableCollectionViewCell.swift in Sources */,
+				18474558267BA7FC00D436A4 /* NotificationVC.swift in Sources */,
 				A5C5C7EF228033920090F3A0 /* CustomInteractor.swift in Sources */,
 				9796D48624C83AC500DDC2D1 /* VideoViewController.swift in Sources */,
 				A5C5C7EC228033920090F3A0 /* String+Extension.swift in Sources */,
@@ -3380,6 +3571,7 @@
 				A5C5C887228033DF0090F3A0 /* LoadingView.swift in Sources */,
 				237E13062293DEBD00074753 /* FirebaseService.swift in Sources */,
 				CA3F27FA248F2C1200030232 /* DropdownTransitionDelegate.swift in Sources */,
+				184866F0267BADA8001C9BCE /* QuestionCell.swift in Sources */,
 				A5C5C7EE228033920090F3A0 /* CustomAnimation.swift in Sources */,
 				A5C5C80F228033BA0090F3A0 /* Constants.swift in Sources */,
 				CA3F27E0248F2C1200030232 /* VideoPreviewViewController.swift in Sources */,

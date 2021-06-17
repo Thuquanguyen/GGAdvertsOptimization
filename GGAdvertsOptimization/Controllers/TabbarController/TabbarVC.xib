@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabbarVC" customModule="Y_Tế_Thông_Minh" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabbarVC" customModule="Y_Te_Benh_Nhan" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="KVL-AE-Lz9" id="reS-75-arO"/>
                 <outlet property="tabbarView" destination="7zf-Ry-h1N" id="rd4-D2-AcP"/>
@@ -22,11 +22,11 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KVL-AE-Lz9">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="826"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" red="0.14117647058823529" green="0.14509803921568626" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zf-Ry-h1N" customClass="TabbarView" customModule="Y_Tế_Thông_Minh" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zf-Ry-h1N" customClass="TabbarView" customModule="Y_Te_Benh_Nhan" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="826" width="414" height="70"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" red="0.14117647058823529" green="0.14509803921568626" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="TD1-jc-1qg"/>
                         <constraint firstAttribute="height" priority="750" constant="70" id="xcO-4t-IPb"/>
@@ -38,6 +38,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="7zf-Ry-h1N" secondAttribute="bottom" id="4Le-v0-82b"/>
@@ -48,7 +49,6 @@
                 <constraint firstItem="KVL-AE-Lz9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bjO-d9-K3R"/>
                 <constraint firstItem="7zf-Ry-h1N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nfz-vs-lgW"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="112"/>
         </view>
     </objects>

@@ -44,16 +44,16 @@ import RealmSwift
     }
     
     func checkApp(){
-        if !SharedData.didFirstLaunched {
-            SharedData.didFirstLaunched = true
-            makeWelcome()
-        } else {
-            if SharedData.accessToken != nil {
+//        if !SharedData.didFirstLaunched {
+//            SharedData.didFirstLaunched = true
+//            makeWelcome()
+//        } else {
+//            if SharedData.accessToken != nil {
                 makeMainTabbar()
-            } else {
-                makeLogin()
-            }
-        }
+//            } else {
+//                makeLogin()
+//            }
+//        }
     }
     
     

@@ -32,32 +32,28 @@ class TabbarVC: BaseVC {
     }()
     
     lazy var notificationVC: UIViewController = {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .red
+        let vc = NotificationVC()
         let nav = UINavigationController(rootViewController: vc)
         nav.navigationBar.isHidden = true
         return nav
     }()
     
     lazy var addScheduleVC: UIViewController = {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .yellow
+        let vc = CreateCampainVC()
         let nav = UINavigationController(rootViewController: vc)
         nav.navigationBar.isHidden = true
         return nav
     }()
     
     lazy var personalVC: UIViewController = {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .green
+        let vc = SettingVC()
         let nav = BaseNavigationVC(rootViewController: vc)
         nav.navigationBar.isHidden = true
         return nav
     }()
     
     lazy var remindVC: UIViewController = {
-        let vc = UIViewController()
-        vc.view.backgroundColor = .blue
+        let vc = QuestionVC()
         let nav = UINavigationController(rootViewController: vc)
         nav.navigationBar.isHidden = true
         return nav
@@ -78,7 +74,7 @@ class TabbarVC: BaseVC {
     }
     
     private func setup() {
-        subScreenList = [homeVC, notificationVC, addScheduleVC, remindVC, personalVC]
+        subScreenList = [homeVC, addScheduleVC, notificationVC, remindVC, personalVC]
         
         self.setSubView(index: currentIndexSelected)
         tabbarView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]

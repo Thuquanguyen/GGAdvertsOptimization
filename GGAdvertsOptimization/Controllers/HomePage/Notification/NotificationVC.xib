@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationVC" customModule="Y_Te_Benh_Nhan" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eey-tT-MXp">
+                    <rect key="frame" x="15" y="49" width="126.5" height="26"/>
+                    <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="22"/>
+                    <color key="textColor" red="0.90196078431372551" green="0.90588235294117647" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7md-RZ-S5z">
+                    <rect key="frame" x="334" y="47" width="65" height="30"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9c-Ia-2RS">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKv-tO-aJY">
+                                    <rect key="frame" x="5" y="5" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="Pp0-fX-7Bz"/>
+                                        <constraint firstAttribute="width" secondItem="VKv-tO-aJY" secondAttribute="height" multiplier="1:1" id="f7W-Dk-K7e"/>
+                                    </constraints>
+                                    <state key="normal" image="ic_setting_header"/>
+                                    <connections>
+                                        <action selector="actionSetting:" destination="-1" eventType="touchUpInside" id="8B8-74-2Nv"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.20000000000000001" green="0.20784313730000001" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="1d9-iP-UvM"/>
+                                <constraint firstItem="VKv-tO-aJY" firstAttribute="centerY" secondItem="b9c-Ia-2RS" secondAttribute="centerY" id="Rxo-A6-0M2"/>
+                                <constraint firstAttribute="width" secondItem="b9c-Ia-2RS" secondAttribute="height" multiplier="1:1" id="TKg-wd-IrE"/>
+                                <constraint firstItem="VKv-tO-aJY" firstAttribute="centerX" secondItem="b9c-Ia-2RS" secondAttribute="centerX" id="bax-QG-DXs"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hlz-wI-bZY">
+                            <rect key="frame" x="35" y="0.0" width="30" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1f-Vm-5cf">
+                                    <rect key="frame" x="7.5" y="7.5" width="15" height="15"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="15" id="Ps8-KE-lkg"/>
+                                        <constraint firstAttribute="width" secondItem="f1f-Vm-5cf" secondAttribute="height" multiplier="1:1" id="yke-5o-vkm"/>
+                                    </constraints>
+                                    <state key="normal" image="ic_filter"/>
+                                    <connections>
+                                        <action selector="actionFilter:" destination="-1" eventType="touchUpInside" id="DbW-zC-EDl"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.20000000000000001" green="0.20784313725490194" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="f1f-Vm-5cf" firstAttribute="centerX" secondItem="Hlz-wI-bZY" secondAttribute="centerX" id="3pl-CB-smS"/>
+                                <constraint firstAttribute="width" secondItem="Hlz-wI-bZY" secondAttribute="height" multiplier="1:1" id="CFU-8h-iOj"/>
+                                <constraint firstItem="f1f-Vm-5cf" firstAttribute="centerY" secondItem="Hlz-wI-bZY" secondAttribute="centerY" id="PD0-0i-pFB"/>
+                                <constraint firstAttribute="width" constant="30" id="y6U-cT-Oj2"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="b9c-Ia-2RS" firstAttribute="width" secondItem="b9c-Ia-2RS" secondAttribute="height" multiplier="1:1" id="y4y-bq-Ned"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gf6-NM-vdD">
+                    <rect key="frame" x="131.5" y="405" width="151.5" height="96.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_notification_center" translatesAutoresizingMaskIntoConstraints="NO" id="9b7-qA-QGM">
+                            <rect key="frame" x="35.5" y="0.0" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="9b7-qA-QGM" secondAttribute="height" multiplier="1:1" id="B3u-7w-HDV"/>
+                                <constraint firstAttribute="width" constant="80" id="ETe-X1-7Sh"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No notifications to show" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADd-te-MXx">
+                            <rect key="frame" x="0.0" y="80" width="151.5" height="16.5"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                            <color key="textColor" red="0.46666666666666667" green="0.47058823529411764" blue="0.49019607843137253" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.14117647059999999" green="0.1450980392" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7md-RZ-S5z" secondAttribute="trailing" constant="15" id="AqN-QD-eNV"/>
+                <constraint firstItem="Eey-tT-MXp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="C1i-wg-baq"/>
+                <constraint firstItem="Gf6-NM-vdD" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="D2W-82-Lbz"/>
+                <constraint firstItem="Gf6-NM-vdD" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="NaY-37-2OM"/>
+                <constraint firstItem="Eey-tT-MXp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="V9i-21-y6U"/>
+                <constraint firstItem="7md-RZ-S5z" firstAttribute="centerY" secondItem="Eey-tT-MXp" secondAttribute="centerY" id="ZgZ-3f-EVI"/>
+            </constraints>
+            <point key="canvasLocation" x="-146" y="66"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_filter" width="25" height="25"/>
+        <image name="ic_notification_center" width="50" height="50"/>
+        <image name="ic_setting_header" width="25" height="25"/>
+    </resources>
+</document>

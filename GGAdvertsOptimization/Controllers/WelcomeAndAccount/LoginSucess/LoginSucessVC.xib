@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -34,17 +35,17 @@
                         <constraint firstAttribute="height" constant="200" id="mna-Lz-H4v"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google: $250 ad credit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWy-mM-nth">
-                    <rect key="frame" x="40" y="588" width="334" height="28"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook: 500$ ad credit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWy-mM-nth">
+                    <rect key="frame" x="40" y="588" width="334" height="28.5"/>
                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="24"/>
                     <color key="textColor" red="0.8666666666666667" green="0.89803921568627454" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="highlightedColor" red="0.8666666666666667" green="0.89803921568627454" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egP-fh-zjE">
-                    <rect key="frame" x="20" y="656" width="374" height="60"/>
+                    <rect key="frame" x="20" y="656.5" width="374" height="60"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FDS2D - FE2DE - 4FD33" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1l8-QJ-B9m">
-                            <rect key="frame" x="20" y="16" width="334" height="28"/>
+                            <rect key="frame" x="20" y="16" width="334" height="28.5"/>
                             <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="24"/>
                             <color key="textColor" red="0.86666666670000003" green="0.8980392157" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="highlightedColor" red="0.86666666670000003" green="0.8980392157" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -59,7 +60,7 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejd-OD-6Dr">
-                    <rect key="frame" x="132" y="746" width="150" height="44"/>
+                    <rect key="frame" x="132" y="746.5" width="150" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="B5F-La-DWO"/>
                         <constraint firstAttribute="width" constant="150" id="S6S-tW-UOP"/>

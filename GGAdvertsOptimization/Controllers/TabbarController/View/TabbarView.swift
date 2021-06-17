@@ -33,10 +33,10 @@ class TabbarView: UIView {
     // MARK: - Properties
     var listButton: [UIButton] = []
     var listLabel: [UILabel] = []
-    var listTitle: [String] = ["Trang chủ".localized, "Tin nhắn".localized, "Thêm lịch tư vấn".localized, "Hỏi đáp".localized, "Cá nhân".localized]
+    var listTitle: [String] = ["Home".localized, "Campain".localized, "Notification".localized, "Q&A".localized, "Setting".localized]
     var listImage: [UIImageView] = []
-    private let highlightColor = UIColor(r: 111, g: 211, b: 213)
-    private let normalColor = UIColor(r: 162, g: 188, b: 188)
+    private let highlightColor = UIColor.white
+    private let normalColor = UIColor.white
     private let font = UIFont(name: "Roboto-Bold", size: 8)
     
     // MARK: - Closures
