@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="Y_Te_Benh_Nhan" customModuleProvider="target">
             <connections>
+                <outlet property="facebookView" destination="3jH-jv-ddj" id="fBQ-jq-Gns"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -97,6 +98,7 @@ Google Ads Coupon</string>
                 <constraint firstItem="ryA-EI-hYI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HtK-X0-CRE"/>
                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ryA-EI-hYI" secondAttribute="trailing" constant="40" id="Ky7-lh-vnL"/>
                 <constraint firstItem="ryA-EI-hYI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YPI-s9-kdv"/>
+                <constraint firstAttribute="trailing" secondItem="3jH-jv-ddj" secondAttribute="trailing" constant="87" id="dJj-AW-yah"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </view>

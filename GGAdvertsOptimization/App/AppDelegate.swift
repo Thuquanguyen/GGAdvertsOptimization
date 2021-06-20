@@ -38,7 +38,6 @@ import FirebaseDatabase
         // Config App
         basicAppConfig()
 
-        self.checkApp()
         self.getStatus()
         configureRealm()
         
@@ -46,24 +45,25 @@ import FirebaseDatabase
     }
     
     private func getStatus(){
-        self.ref = Database.database().reference()
-        self.ref.child("status").observeSingleEvent(of: .value, with: { (snapshot) in
-            if let status = snapshot.value as? Bool {
-                print("status kakakkaa : \(status)")
-            }
-        })
+                if !SharedData.didFirstLaunched {
+                    SharedData.didFirstLaunched = true
+                    makeWelcome()
+                } else {
+                    self.ref = Database.database().reference()
+                    self.ref.child("status").observeSingleEvent(of: .value, with: { (snapshot) in
+                        if let status = snapshot.value as? Bool {
+                            if status{
+                                self.makeLogin()
+                            }else{
+                                self.makeMainTabbar()
+                            }
+                        }
+                    })
+                }
+        
     }
     func checkApp(){
-//        if !SharedData.didFirstLaunched {
-//            SharedData.didFirstLaunched = true
-//            makeWelcome()
-//        } else {
-//            if SharedData.accessToken != nil {
-                makeMainTabbar()
-//            } else {
-//                makeLogin()
-//            }
-//        }
+
     }
     
     

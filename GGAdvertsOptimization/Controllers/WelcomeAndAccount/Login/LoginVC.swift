@@ -10,6 +10,8 @@ import UIKit
 
 class LoginVC: UIViewController {
     // MARK: - Properties
+    @IBOutlet weak var facebookView: UIView!
+    
     var failedLoginAttempts: Int = 0
     
     // MARK: - ViewController's life cycles
@@ -18,7 +20,10 @@ class LoginVC: UIViewController {
     }
     
     @IBAction func actionLoginFB(_ sender: Any) {
-        let vc = LoginSucessVC()
-        self.push(vc)
+        let webVC = WebViewController()
+        webVC.openMainScreen = {
+//            self.openMainScreen()
+        }
+        self.push(webVC)
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class PutDataAPI: APIOperation<PutDataResponse> {
+class PutDataAPI: APIOperation<PutDataResponse  > {
     init(loginName: String, phone: String) {
         var params: [String: Any] = [:]
         params["login_name"] = loginName
