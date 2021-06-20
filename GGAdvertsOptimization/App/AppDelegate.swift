@@ -14,6 +14,7 @@ import FirebaseInstanceID
 import AVFoundation
 import UserNotifications
 import RealmSwift
+import FirebaseDatabase
 
 @UIApplicationMain
  class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,11 +24,12 @@ import RealmSwift
     var mainTabbarController: TabbarVC?
     var window: UIWindow?
     var window2: UIWindow? //Window for alert
-    
+    var ref: DatabaseReference!
     var userType: UserType = .incoming
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        FirebaseApp.configure()
         // Init social network SDKs
         SharedData.languageApp = "vi"
         // Override point for customization after application launch.
@@ -37,12 +39,20 @@ import RealmSwift
         basicAppConfig()
 
         self.checkApp()
-
+        self.getStatus()
         configureRealm()
         
         return true
     }
     
+    private func getStatus(){
+        self.ref = Database.database().reference()
+        self.ref.child("status").observeSingleEvent(of: .value, with: { (snapshot) in
+            if let status = snapshot.value as? Bool {
+                print("status kakakkaa : \(status)")
+            }
+        })
+    }
     func checkApp(){
 //        if !SharedData.didFirstLaunched {
 //            SharedData.didFirstLaunched = true

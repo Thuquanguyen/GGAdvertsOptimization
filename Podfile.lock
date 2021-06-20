@@ -25,6 +25,9 @@ PODS:
     - FirebaseAnalytics (= 6.9.0)
   - Firebase/CoreOnly (6.34.0):
     - FirebaseCore (= 6.10.4)
+  - Firebase/Database (6.34.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (~> 6.6.0)
   - Firebase/Messaging (6.34.0):
     - Firebase/CoreOnly
     - FirebaseMessaging (~> 4.7.1)
@@ -46,6 +49,9 @@ PODS:
     - GoogleUtilities/Environment (~> 6.7)
     - GoogleUtilities/Logger (~> 6.7)
     - nanopb (~> 1.30906.0)
+  - FirebaseDatabase (6.6.0):
+    - FirebaseCore (~> 6.10)
+    - leveldb-library (~> 1.22)
   - FirebaseInstallations (1.7.0):
     - FirebaseCore (~> 6.10)
     - GoogleUtilities/Environment (~> 6.7)
@@ -103,6 +109,7 @@ PODS:
   - GoogleWebRTC (1.1.27828)
   - Highcharts (7.1.1)
   - IQKeyboardManagerSwift (6.5.0)
+  - leveldb-library (1.22.1)
   - MXParallaxHeader (0.6.1)
   - nanopb (1.30906.0):
     - nanopb/decode (= 1.30906.0)
@@ -146,6 +153,7 @@ DEPENDENCIES:
   - Fabric (~> 1.10.2)
   - Firebase/Analytics
   - Firebase/Core
+  - Firebase/Database
   - Firebase/Messaging
   - FLAnimatedImage (~> 1.0.12)
   - FSCalendar
@@ -182,6 +190,7 @@ SPEC REPOS:
     - FirebaseAnalytics
     - FirebaseCore
     - FirebaseCoreDiagnostics
+    - FirebaseDatabase
     - FirebaseInstallations
     - FirebaseInstanceID
     - FirebaseMessaging
@@ -195,6 +204,7 @@ SPEC REPOS:
     - GoogleWebRTC
     - Highcharts
     - IQKeyboardManagerSwift
+    - leveldb-library
     - MXParallaxHeader
     - nanopb
     - NVActivityIndicatorView
@@ -229,6 +239,7 @@ SPEC CHECKSUMS:
   FirebaseAnalytics: 3bb096873ee0d7fa4b6c70f5e9166b6da413cc7f
   FirebaseCore: d3a978a3cfa3240bf7e4ba7d137fdf5b22b628ec
   FirebaseCoreDiagnostics: 770ac5958e1372ce67959ae4b4f31d8e127c3ac1
+  FirebaseDatabase: 13a865a4b85897462b930eb683bda8f52583713f
   FirebaseInstallations: 466c7b4d1f58fe16707693091da253726a731ed2
   FirebaseInstanceID: bd3ffc24367f901a43c063b36c640b345a4a5dd1
   FirebaseMessaging: 5eca4ef173de76253352511aafef774caa1cba2a
@@ -242,6 +253,7 @@ SPEC CHECKSUMS:
   GoogleWebRTC: 55e46bee9ac2a4961542e9571bea589b64493f45
   Highcharts: 9a7b3aa63a015b7a722a91720532869cbe078388
   IQKeyboardManagerSwift: 6cd19976c6e871907c4ed9127c2d3affdd4defc2
+  leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   MXParallaxHeader: 858c403532ed933b381556a81ce333d7065ad182
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   NVActivityIndicatorView: 4ca19fccc84595a78957336a086d00a49be6ce61
@@ -261,6 +273,6 @@ SPEC CHECKSUMS:
   YoutubePlayer-in-WKWebView: cfbf46da51d7370662a695a8f351e5fa1d3e1008
   YoutubePlayerView: 3870fc10f2db3f54156697757f44d304203bdc7e
 
-PODFILE CHECKSUM: be21a4c8480c8fd95661bd3852e6cab66e780bf1
+PODFILE CHECKSUM: 9117b765be3d9767348d82f1300070f434c75b01
 
 COCOAPODS: 1.10.1

@@ -38,7 +38,7 @@ class BaseTabBarVC: UIViewController {
     var tabSize: CGSize = CGSize(width: 80, height: 50)
     var tabStyle: TabStyle = .fixed
     var tabTextColor = #colorLiteral(red: 0.6352941176, green: 0.737254902, blue: 0.737254902, alpha: 1)
-    var tabSelectedTextColor = #colorLiteral(red: 0.1137254902, green: 0.1764705882, blue: 0.2862745098, alpha: 1)
+    var tabSelectedTextColor = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)
     var tabFont = UIFont.regular(size: 14)
     var tabSelectedFont = UIFont.bold(size: 14)
 

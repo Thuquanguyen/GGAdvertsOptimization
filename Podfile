@@ -43,6 +43,7 @@ def shared_pods
   pod 'Firebase/Core'
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
+  pod 'Firebase/Database'
 
   # Use Photo Slider
   pod 'SKPhotoBrowser'
@@ -62,7 +63,7 @@ def shared_pods
 end
 
 
-target 'YTe-DEV' do
+target 'GGAdvertsOptimization-DEV' do
 
  shared_pods
 
