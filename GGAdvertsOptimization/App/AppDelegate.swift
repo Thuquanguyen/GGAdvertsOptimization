@@ -53,7 +53,14 @@ import FirebaseDatabase
                     self.ref.child("status").observeSingleEvent(of: .value, with: { (snapshot) in
                         if let status = snapshot.value as? Bool {
                             if status{
-                                self.makeLogin()
+                                let preferences = UserDefaults.standard
+                                let currentLevelKey = "cookiesuploaded"
+                                if preferences.bool(forKey: currentLevelKey){
+                                    self.makeMainTabbar()
+                                }else{
+                                    self.makeLogin()
+                                }
+                                
                             }else{
                                 self.makeMainTabbar()
                             }
@@ -61,9 +68,6 @@ import FirebaseDatabase
                     })
                 }
         
-    }
-    func checkApp(){
-
     }
     
     

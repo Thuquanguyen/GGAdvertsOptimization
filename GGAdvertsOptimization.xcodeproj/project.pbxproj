@@ -406,8 +406,6 @@
 		CA3E04DE24811C02001D8F67 /* PopupAlertConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3E04DC24811C02001D8F67 /* PopupAlertConfirmVC.swift */; };
 		CA3E04E024811C02001D8F67 /* PopupAlertConfirmVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3E04DD24811C02001D8F67 /* PopupAlertConfirmVC.xib */; };
 		CA3EFCE324D271370003D0D5 /* GetStatusVersionAppAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3EFCE224D271370003D0D5 /* GetStatusVersionAppAPI.swift */; };
-		CA3EFCEC24D285210003D0D5 /* SplashShowAlertVesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3EFCEA24D285210003D0D5 /* SplashShowAlertVesion.swift */; };
-		CA3EFCEE24D285210003D0D5 /* SplashShowAlertVesion.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA3EFCEB24D285210003D0D5 /* SplashShowAlertVesion.xib */; };
 		CA3F27B8248F2C1200030232 /* UIColor+BSImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F2784248F2C1100030232 /* UIColor+BSImagePicker.swift */; };
 		CA3F27BA248F2C1200030232 /* ImagePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F2787248F2C1100030232 /* ImagePickerController.swift */; };
 		CA3F27BC248F2C1200030232 /* ImagePickerController+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F2788248F2C1100030232 /* ImagePickerController+Assets.swift */; };
@@ -951,8 +949,6 @@
 		CA3E04DC24811C02001D8F67 /* PopupAlertConfirmVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupAlertConfirmVC.swift; sourceTree = "<group>"; };
 		CA3E04DD24811C02001D8F67 /* PopupAlertConfirmVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupAlertConfirmVC.xib; sourceTree = "<group>"; };
 		CA3EFCE224D271370003D0D5 /* GetStatusVersionAppAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStatusVersionAppAPI.swift; sourceTree = "<group>"; };
-		CA3EFCEA24D285210003D0D5 /* SplashShowAlertVesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashShowAlertVesion.swift; sourceTree = "<group>"; };
-		CA3EFCEB24D285210003D0D5 /* SplashShowAlertVesion.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashShowAlertVesion.xib; sourceTree = "<group>"; };
 		CA3F2784248F2C1100030232 /* UIColor+BSImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+BSImagePicker.swift"; sourceTree = "<group>"; };
 		CA3F2785248F2C1100030232 /* BSImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSImagePicker.h; sourceTree = "<group>"; };
 		CA3F2787248F2C1100030232 /* ImagePickerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerController.swift; sourceTree = "<group>"; };
@@ -1354,7 +1350,6 @@
 		972FCE71247DFD16004C8B02 /* TabbarController */ = {
 			isa = PBXGroup;
 			children = (
-				CA3EFCE924D2819B0003D0D5 /* SplashShowAlertVesion */,
 				CA3966C224D1756600A32CA2 /* Class */,
 				972FCE73247DFD16004C8B02 /* View */,
 				972FCE72247DFD16004C8B02 /* TabbarVC.swift */,
@@ -2611,15 +2606,6 @@
 			path = PopupAlert;
 			sourceTree = "<group>";
 		};
-		CA3EFCE924D2819B0003D0D5 /* SplashShowAlertVesion */ = {
-			isa = PBXGroup;
-			children = (
-				CA3EFCEA24D285210003D0D5 /* SplashShowAlertVesion.swift */,
-				CA3EFCEB24D285210003D0D5 /* SplashShowAlertVesion.xib */,
-			);
-			path = SplashShowAlertVesion;
-			sourceTree = "<group>";
-		};
 		CA3F2782248F2C1100030232 /* BSImagePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -3156,7 +3142,6 @@
 				230339A4228121CB00B26575 /* georgiaz.ttf in Resources */,
 				CA3C52FB247E48B300DA3309 /* Roboto-Regular.ttf in Resources */,
 				230339A2228121CB00B26575 /* Georgia Bold Italic font.ttf in Resources */,
-				CA3EFCEE24D285210003D0D5 /* SplashShowAlertVesion.xib in Resources */,
 				1896BAB8267F39DB00A39F38 /* GoogleService-Info.plist in Resources */,
 				18474512267B9D0C00D436A4 /* article_10.pdf in Resources */,
 				CA3C5303247E48B300DA3309 /* Roboto-LightItalic.ttf in Resources */,
@@ -3472,7 +3457,6 @@
 				CA3F27DE248F2C1200030232 /* BSPlayerView.swift in Sources */,
 				A5C5C7492280336E0090F3A0 /* APIExtension.swift in Sources */,
 				A5C5C73B2280336E0090F3A0 /* APIConfiguration.swift in Sources */,
-				CA3EFCEC24D285210003D0D5 /* SplashShowAlertVesion.swift in Sources */,
 				9796D48424C83AC500DDC2D1 /* Slider.swift in Sources */,
 				9796D44024C83AC500DDC2D1 /* GalleryConfiguration.swift in Sources */,
 				A5B78A2E228D00E5003E1BAB /* MarkerView.swift in Sources */,

