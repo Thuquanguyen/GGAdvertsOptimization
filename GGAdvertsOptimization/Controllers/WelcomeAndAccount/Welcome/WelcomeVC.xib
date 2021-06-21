@@ -84,7 +84,7 @@
                             </constraints>
                             <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="17"/>
                             <state key="normal" title="SKIP">
-                                <color key="titleColor" systemColor="systemPurpleColor"/>
+                                <color key="titleColor" red="0.094117647058823528" green="0.46666666666666667" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
@@ -94,7 +94,7 @@
                                     <real key="value" value="1"/>
                                 </userDefinedRuntimeAttribute>
                                 <userDefinedRuntimeAttribute type="color" keyPath="setBorderColor">
-                                    <color key="value" systemColor="systemPurpleColor"/>
+                                    <color key="value" red="0.094117647058823528" green="0.46666666666666667" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
@@ -103,7 +103,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jDy-iE-WQa">
                             <rect key="frame" x="254" y="0.0" width="100" height="44"/>
-                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            <color key="backgroundColor" red="0.094117647058823528" green="0.46666666666666667" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="Q5Q-Jr-Pdg"/>
                                 <constraint firstAttribute="height" constant="44" id="xGe-hW-5HL"/>
@@ -142,9 +142,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

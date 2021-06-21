@@ -54,14 +54,14 @@
                             <rect key="frame" x="0.0" y="0.0" width="109.5" height="60"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D4d-Lg-FrK">
-                                    <rect key="frame" x="42.5" y="11" width="25" height="25"/>
+                                    <rect key="frame" x="42.5" y="17.5" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25" id="TCD-6h-dag"/>
                                         <constraint firstAttribute="width" secondItem="D4d-Lg-FrK" secondAttribute="height" id="hc5-d2-BYb"/>
                                         <constraint firstAttribute="width" constant="25" id="oaZ-z9-q5b"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vibration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsZ-6T-aWe">
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vibration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsZ-6T-aWe">
                                     <rect key="frame" x="38.5" y="40" width="33" height="18"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="18" id="Th1-gX-t0f"/>
@@ -81,10 +81,10 @@
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="DLR-xS-erz" secondAttribute="trailing" id="Acq-MQ-Ggm"/>
                                 <constraint firstItem="DLR-xS-erz" firstAttribute="top" secondItem="tSd-Uz-jbc" secondAttribute="top" id="GhK-WB-sDB"/>
-                                <constraint firstItem="VsZ-6T-aWe" firstAttribute="top" secondItem="D4d-Lg-FrK" secondAttribute="bottom" constant="4" id="OaQ-p9-IUB"/>
                                 <constraint firstAttribute="bottom" secondItem="VsZ-6T-aWe" secondAttribute="bottom" constant="2" id="W4l-HZ-WJI"/>
                                 <constraint firstAttribute="bottom" secondItem="DLR-xS-erz" secondAttribute="bottom" id="Xik-sh-nYS"/>
                                 <constraint firstItem="DLR-xS-erz" firstAttribute="leading" secondItem="tSd-Uz-jbc" secondAttribute="leading" id="hV1-jL-MCm"/>
+                                <constraint firstItem="D4d-Lg-FrK" firstAttribute="centerY" secondItem="tSd-Uz-jbc" secondAttribute="centerY" id="kKO-Kc-Mjs"/>
                                 <constraint firstItem="VsZ-6T-aWe" firstAttribute="centerX" secondItem="tSd-Uz-jbc" secondAttribute="centerX" id="v2l-yx-5vV"/>
                                 <constraint firstItem="D4d-Lg-FrK" firstAttribute="centerX" secondItem="tSd-Uz-jbc" secondAttribute="centerX" id="z5X-Mu-g07"/>
                             </constraints>
@@ -93,7 +93,7 @@
                             <rect key="frame" x="109.5" y="0.0" width="109.5" height="60"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TNp-So-6PB">
-                                    <rect key="frame" x="42.5" y="11" width="25" height="25"/>
+                                    <rect key="frame" x="42.5" y="17.5" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25" id="MaB-zp-UYo"/>
                                         <constraint firstAttribute="width" constant="25" id="Zaf-lT-ljq"/>
@@ -124,7 +124,7 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </view>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgF-Wu-iPg">
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Setting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgF-Wu-iPg">
                                     <rect key="frame" x="39" y="40" width="32" height="18"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="18" id="xer-CD-WU3"/>
@@ -150,15 +150,15 @@
                                 <constraint firstItem="CgF-Wu-iPg" firstAttribute="centerX" secondItem="9p1-c2-ebf" secondAttribute="centerX" id="GgG-7x-UaK"/>
                                 <constraint firstItem="I7q-my-hms" firstAttribute="leading" secondItem="TNp-So-6PB" secondAttribute="trailing" constant="-6" id="L86-Ja-jwq"/>
                                 <constraint firstAttribute="bottom" secondItem="CgF-Wu-iPg" secondAttribute="bottom" constant="2" id="LjD-85-uzs"/>
+                                <constraint firstItem="TNp-So-6PB" firstAttribute="centerY" secondItem="9p1-c2-ebf" secondAttribute="centerY" id="ad7-yR-PWs"/>
                                 <constraint firstItem="I7q-my-hms" firstAttribute="top" secondItem="9p1-c2-ebf" secondAttribute="top" constant="5" id="fzb-aw-WYV"/>
-                                <constraint firstItem="CgF-Wu-iPg" firstAttribute="top" secondItem="TNp-So-6PB" secondAttribute="bottom" constant="4" id="zp4-qi-07e"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8r8-zo-Dwe">
                             <rect key="frame" x="219" y="0.0" width="110" height="60"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BgN-V8-F7g">
-                                    <rect key="frame" x="42.5" y="11" width="25" height="25"/>
+                                    <rect key="frame" x="42.5" y="17.5" width="25" height="25"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fot-ls-aab">
                                             <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
@@ -177,7 +177,7 @@
                                         <constraint firstAttribute="bottom" secondItem="fot-ls-aab" secondAttribute="bottom" id="wOC-cm-oDL"/>
                                     </constraints>
                                 </view>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcX-lh-vyR">
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LcX-lh-vyR">
                                     <rect key="frame" x="43.5" y="40" width="23" height="18"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="18" id="8hU-1y-e7m"/>
@@ -201,7 +201,7 @@
                                 <constraint firstItem="IxL-x2-vEP" firstAttribute="leading" secondItem="8r8-zo-Dwe" secondAttribute="leading" id="SFT-Vg-lXK"/>
                                 <constraint firstAttribute="bottom" secondItem="LcX-lh-vyR" secondAttribute="bottom" constant="2" id="Twd-Xz-32q"/>
                                 <constraint firstItem="LcX-lh-vyR" firstAttribute="centerX" secondItem="8r8-zo-Dwe" secondAttribute="centerX" id="dVy-hL-Tn4"/>
-                                <constraint firstItem="LcX-lh-vyR" firstAttribute="top" secondItem="BgN-V8-F7g" secondAttribute="bottom" constant="4" id="rtq-L3-vxQ"/>
+                                <constraint firstItem="BgN-V8-F7g" firstAttribute="centerY" secondItem="8r8-zo-Dwe" secondAttribute="centerY" id="muC-aW-0QJ"/>
                                 <constraint firstItem="BgN-V8-F7g" firstAttribute="centerX" secondItem="8r8-zo-Dwe" secondAttribute="centerX" id="tws-da-Y0p"/>
                             </constraints>
                         </view>
@@ -209,14 +209,14 @@
                             <rect key="frame" x="329" y="0.0" width="109.5" height="60"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cY0-PA-d1g">
-                                    <rect key="frame" x="42" y="11" width="25" height="25"/>
+                                    <rect key="frame" x="42" y="17.5" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="cY0-PA-d1g" secondAttribute="height" id="4L8-sd-4V5"/>
                                         <constraint firstAttribute="height" constant="25" id="U03-g4-jqo"/>
                                         <constraint firstAttribute="width" constant="25" id="bd5-8c-0V9"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSK-jq-Dxd">
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSK-jq-Dxd">
                                     <rect key="frame" x="43" y="40" width="23" height="18"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="18" id="aui-Tt-GUr"/>
@@ -241,21 +241,21 @@
                                 <constraint firstAttribute="bottom" secondItem="bHZ-eH-CoQ" secondAttribute="bottom" id="Z64-ab-hn5"/>
                                 <constraint firstAttribute="bottom" secondItem="DSK-jq-Dxd" secondAttribute="bottom" constant="2" id="ZE9-0P-F9I"/>
                                 <constraint firstItem="DSK-jq-Dxd" firstAttribute="centerX" secondItem="Ccc-gy-hUC" secondAttribute="centerX" id="a82-TM-4rM"/>
-                                <constraint firstItem="DSK-jq-Dxd" firstAttribute="top" secondItem="cY0-PA-d1g" secondAttribute="bottom" constant="4" id="leN-Bj-Z5w"/>
+                                <constraint firstItem="cY0-PA-d1g" firstAttribute="centerY" secondItem="Ccc-gy-hUC" secondAttribute="centerY" id="vew-0h-Pb9"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZF-jh-E1u">
                             <rect key="frame" x="438.5" y="0.0" width="109.5" height="60"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nkh-3R-fbY">
-                                    <rect key="frame" x="42" y="11" width="25" height="25"/>
+                                    <rect key="frame" x="42" y="17.5" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="nkh-3R-fbY" secondAttribute="height" id="1hW-0f-fT8"/>
                                         <constraint firstAttribute="height" constant="25" id="Yjj-Uh-HWI"/>
                                         <constraint firstAttribute="width" constant="25" id="fm9-fw-pD6"/>
                                     </constraints>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVt-NG-93N">
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVt-NG-93N">
                                     <rect key="frame" x="43" y="40" width="23" height="18"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="18" id="wJc-fv-sCz"/>
@@ -278,9 +278,9 @@
                                 <constraint firstItem="sj3-7p-oKb" firstAttribute="leading" secondItem="yZF-jh-E1u" secondAttribute="leading" id="Fva-ok-OKy"/>
                                 <constraint firstItem="sj3-7p-oKb" firstAttribute="top" secondItem="yZF-jh-E1u" secondAttribute="top" id="LoV-8E-QBa"/>
                                 <constraint firstAttribute="trailing" secondItem="sj3-7p-oKb" secondAttribute="trailing" id="YuX-mV-cvI"/>
+                                <constraint firstItem="nkh-3R-fbY" firstAttribute="centerY" secondItem="yZF-jh-E1u" secondAttribute="centerY" id="dZB-7T-v0a"/>
                                 <constraint firstAttribute="bottom" secondItem="sj3-7p-oKb" secondAttribute="bottom" id="gaS-ta-wah"/>
                                 <constraint firstAttribute="bottom" secondItem="KVt-NG-93N" secondAttribute="bottom" constant="2" id="mbc-wl-NgE"/>
-                                <constraint firstItem="KVt-NG-93N" firstAttribute="top" secondItem="nkh-3R-fbY" secondAttribute="bottom" constant="4" id="qPO-QH-yxd"/>
                             </constraints>
                         </view>
                     </subviews>

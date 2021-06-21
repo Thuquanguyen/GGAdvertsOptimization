@@ -15,22 +15,8 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_flast_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Hoc-FU-evn">
-                                <rect key="frame" x="30" y="263.5" width="315" height="140"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="140" id="dY6-oX-6Xb"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="Hoc-FU-evn" secondAttribute="leading" constant="-30" id="H0g-HJ-VKL"/>
-                            <constraint firstItem="Hoc-FU-evn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-30" id="fU7-7t-KDf"/>
-                            <constraint firstItem="Hoc-FU-evn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nJ9-ef-G7v"/>
-                            <constraint firstItem="Hoc-FU-evn" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ouo-AP-fLf"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -38,7 +24,4 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="logo_flast_bottom" width="279" height="112"/>
-    </resources>
 </document>

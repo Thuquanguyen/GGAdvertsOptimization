@@ -30,7 +30,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iki-fO-uON">
                         <rect key="frame" x="15" y="14" width="391" height="19"/>
                         <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
-                        <color key="textColor" red="0.20784313730000001" green="0.2470588235" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="June 16, 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlM-bK-aby">
@@ -66,7 +66,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
-                                <real key="value" value="20"/>
+                                <real key="value" value="10"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -91,11 +91,12 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
-                                <real key="value" value="20"/>
+                                <real key="value" value="10"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.14117647059999999" green="0.1450980392" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="2rg-Pw-mgQ" firstAttribute="leading" secondItem="zlM-bK-aby" secondAttribute="leading" id="7GZ-vv-AKP"/>
                     <constraint firstItem="zlM-bK-aby" firstAttribute="top" secondItem="iki-fO-uON" secondAttribute="bottom" constant="5" id="EYZ-9l-YYy"/>
@@ -121,6 +122,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="article_1" width="1200" height="628"/>
+        <image name="article_1" width="600" height="314"/>
     </resources>
 </document>

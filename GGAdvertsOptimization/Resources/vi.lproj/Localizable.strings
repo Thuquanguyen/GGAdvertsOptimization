@@ -45,7 +45,7 @@
 "tabbar.ultilites" = "Tiện ích";
 
 
-"loading.default_title" = "Đang tải";
+"loading.default_title" = "";
 
 "alert.default_title" = "Thông báo";
 "alert.default_login_error" = "Đăng nhập không thành công, vui lòng thử lại!";

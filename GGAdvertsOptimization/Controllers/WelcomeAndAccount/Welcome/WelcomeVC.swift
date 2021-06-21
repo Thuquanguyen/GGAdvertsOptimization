@@ -29,6 +29,7 @@ class WelcomeVC: UIViewController {
                                   "Click on the icon to copy the promo code".localized]
     var indexPage = 0
     static var timer: Timer?
+    var status: Bool = false
     
     // MARK: - ViewController's life cycles
     deinit {
@@ -84,11 +85,36 @@ class WelcomeVC: UIViewController {
 
     // MARK: - Actions
     @IBAction func buttonSkip(_ sender: Any) {
-        AppDelegate.shared.makeLogin()
+        if status{
+            AppDelegate.shared.makeLogin()
+        }else{
+            AppDelegate.shared.makeMainTabbar()
+        }
     }
     
-    @IBAction func buttonContinue(_ sender: Any) {
-        AppDelegate.shared.makeLogin()
+    @IBAction func buttonContinue(_ sender: UIButton) {
+        if self.indexPage == 2 {
+            print("index page page true true")
+            if status{
+                AppDelegate.shared.makeLogin()
+            }else{
+                AppDelegate.shared.makeMainTabbar()
+            }
+        }else{
+            var index = self.indexPage + 1
+            var direction = UIPageViewController.NavigationDirection.forward
+            direction = index >= 3 ? .reverse : .forward
+            index = index >= 3 ? 0 : index
+            self.page.setViewControllers([self.getPage(index: index) ?? UIViewController()], direction: direction, animated: true, completion: nil)
+            self.indexPage = index
+            self.setPageControl(index: index)
+            if index == 2 {
+                self.buttonStart.setTitle("DONE", for: .normal)
+            }else{
+                self.buttonStart.setTitle("NEXT", for: .normal)
+            }
+            print("index page page false false")
+        }
     }
     
 }
@@ -103,8 +129,8 @@ extension WelcomeVC: UIPageViewControllerDelegate, UIPageViewControllerDataSourc
         vc.index = index
         if imageNames.count > index {
             vc.image = UIImage(imageNames[index])
-            vc.titleScreen = titleScreens[index]
-            vc.contentScreen = contentScreens[index]
+            vc.titleScreen = status ? titleScreens[index] : ""
+            vc.contentScreen = status ? contentScreens[index] : ""
         }
         if index == 2 {
             self.buttonStart.setTitle("DONE", for: .normal)

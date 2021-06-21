@@ -31,8 +31,6 @@ struct PutDataResponse: APIResponseProtocol {
     
     init(json: JSON) {
         errors = APIErrorsModel(json: json["errors"])
-        
-        
     }
 }
 

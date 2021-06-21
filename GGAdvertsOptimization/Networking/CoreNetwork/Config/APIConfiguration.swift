@@ -20,18 +20,18 @@ class APIConfiguration {
     //MARK: - Port Base URL
     static var baseUrlPort: String {
         #if DEVELOP
-        return "http://203.113.138.21:4413"
+        return "http://3.138.32.52:1337"
         #else
-        return "http://203.113.138.21:4416"
+        return "http://3.138.32.52:1337"
         #endif
     }
     
     //MARK: - Main Base URL
     static var baseUrl: String {
         #if DEVELOP
-        return "http://203.113.138.21:4412"
+        return "http://3.138.32.52:1337"
         #else
-        return "http://203.113.138.21:4411"
+        return "http://3.138.32.52:1337"
         #endif
     }
     
@@ -55,8 +55,6 @@ class APIConfiguration {
     // User Headers
     static var userHeaders: HTTPHeaders {
         var headers: HTTPHeaders = httpHeaders
-        headers["Authorization"] = "Bearer " + (SharedData.accessToken ?? "")
-        headers["Content-Type"] = "application/json"
         return headers
     }
     

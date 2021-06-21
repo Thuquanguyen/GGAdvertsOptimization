@@ -38,6 +38,10 @@
 		186C3E79267F9C800011E727 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186C3E77267F9C800011E727 /* WebViewController.xib */; };
 		186C3E7A267F9C800011E727 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C3E78267F9C800011E727 /* WebViewController.swift */; };
 		186C3E7E267F9E8C0011E727 /* WKWebView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C3E7D267F9E8C0011E727 /* WKWebView+Extension.swift */; };
+		187538F72680FC64009D5726 /* SplatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187538F52680FC64009D5726 /* SplatVC.swift */; };
+		187538F82680FC64009D5726 /* SplatVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187538F62680FC64009D5726 /* SplatVC.xib */; };
+		187538FC2680FE20009D5726 /* GetStatusAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187538FB2680FE20009D5726 /* GetStatusAPI.swift */; };
+		1875390026810790009D5726 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187538FF26810790009D5726 /* StatusModel.swift */; };
 		1896BAB8267F39DB00A39F38 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1896BAB7267F39DB00A39F38 /* GoogleService-Info.plist */; };
 		18B2A0802677C3B7006A877C /* LoginSucessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B2A07E2677C3B7006A877C /* LoginSucessVC.swift */; };
 		18B2A0812677C3B7006A877C /* LoginSucessVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B2A07F2677C3B7006A877C /* LoginSucessVC.xib */; };
@@ -571,6 +575,10 @@
 		186C3E77267F9C800011E727 /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		186C3E78267F9C800011E727 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		186C3E7D267F9E8C0011E727 /* WKWebView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "WKWebView+Extension.swift"; sourceTree = "<group>"; };
+		187538F52680FC64009D5726 /* SplatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplatVC.swift; sourceTree = "<group>"; };
+		187538F62680FC64009D5726 /* SplatVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplatVC.xib; sourceTree = "<group>"; };
+		187538FB2680FE20009D5726 /* GetStatusAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStatusAPI.swift; sourceTree = "<group>"; };
+		187538FF26810790009D5726 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
 		1896BAB7267F39DB00A39F38 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		18B2A07E2677C3B7006A877C /* LoginSucessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSucessVC.swift; sourceTree = "<group>"; };
 		18B2A07F2677C3B7006A877C /* LoginSucessVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginSucessVC.xib; sourceTree = "<group>"; };
@@ -1204,6 +1212,25 @@
 				186C3E7D267F9E8C0011E727 /* WKWebView+Extension.swift */,
 			);
 			path = WkWebkit;
+			sourceTree = "<group>";
+		};
+		187538F42680FC4E009D5726 /* Splat */ = {
+			isa = PBXGroup;
+			children = (
+				187538FA2680FDFA009D5726 /* Class */,
+				187538F52680FC64009D5726 /* SplatVC.swift */,
+				187538F62680FC64009D5726 /* SplatVC.xib */,
+			);
+			path = Splat;
+			sourceTree = "<group>";
+		};
+		187538FA2680FDFA009D5726 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				187538FB2680FE20009D5726 /* GetStatusAPI.swift */,
+				187538FF26810790009D5726 /* StatusModel.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 		18B2A07C2677C39E006A877C /* LoginSucess */ = {
@@ -2406,6 +2433,7 @@
 		A5C5C8CA228033EF0090F3A0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				187538F42680FC4E009D5726 /* Splat */,
 				CA3C52E5247E48A600DA3309 /* HomePage */,
 				CA3C52CF247E0AD400DA3309 /* WelcomeAndAccount */,
 				972FCE71247DFD16004C8B02 /* TabbarController */,
@@ -3180,6 +3208,7 @@
 				A5C5C6C8228033070090F3A0 /* LatoLatin-SemiboldItalic.ttf in Resources */,
 				CA3C52F7247E48B300DA3309 /* Roboto-Medium.ttf in Resources */,
 				A5C5C6D1228033070090F3A0 /* LatoLatin-MediumItalic.ttf in Resources */,
+				187538F82680FC64009D5726 /* SplatVC.xib in Resources */,
 				A5C5C6D3228033070090F3A0 /* LatoLatin-Thin.ttf in Resources */,
 				18EF20C5267DD14100C7A792 /* CreateViewCell.xib in Resources */,
 				97D3DDD024B42C66004E0A9D /* PopupSelectListCell.xib in Resources */,
@@ -3495,6 +3524,7 @@
 				CA3F27B8248F2C1200030232 /* UIColor+BSImagePicker.swift in Sources */,
 				9796D45E24C83AC500DDC2D1 /* CGSize.swift in Sources */,
 				CA3F27E8248F2C1200030232 /* NumberView.swift in Sources */,
+				187538FC2680FE20009D5726 /* GetStatusAPI.swift in Sources */,
 				A5C5C8D0228034040090F3A0 /* BaseDataSource.swift in Sources */,
 				979F93C72480C7FA00A7619A /* CollectionDataSource.swift in Sources */,
 				9796D44C24C83AC500DDC2D1 /* GallerySwipeToDismissTransition.swift in Sources */,
@@ -3570,6 +3600,7 @@
 				8CF7A3C423153BAF00BC2FC4 /* SelfSizingTableView.swift in Sources */,
 				A2D3B5DA2285893A002B8062 /* PickerDialog.swift in Sources */,
 				D1F2BA5022C06A01008B2745 /* SearchFilterSectionHeaderView.swift in Sources */,
+				1875390026810790009D5726 /* StatusModel.swift in Sources */,
 				CA3F27EA248F2C1200030232 /* AssetsViewController.swift in Sources */,
 				A5C5C7D3228033920090F3A0 /* UIGradientView.swift in Sources */,
 				CA04422122C4AC50007CC3C4 /* ESRefreshAnimator.swift in Sources */,
@@ -3622,6 +3653,7 @@
 				97617D24248E1E3E0048B0E9 /* BasePageViewController.swift in Sources */,
 				9796D48024C83AC500DDC2D1 /* LayoutEnums.swift in Sources */,
 				A518308F2283C7EC00E2E35B /* PieChartCustomView.swift in Sources */,
+				187538F72680FC64009D5726 /* SplatVC.swift in Sources */,
 				9E5CC9AF22A7729300C06CE9 /* DefaultFilterOptionsTableViewCell.swift in Sources */,
 				97D3DDD224B42C66004E0A9D /* PopupSelectListCell.swift in Sources */,
 				CA3F27CA248F2C1200030232 /* CGSize+Scale.swift in Sources */,
@@ -3876,11 +3908,11 @@
 				APP_DISPLAY_NAME = "Y Tế Thông Minh";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = CUZZ5LX8A8;
+				DEVELOPMENT_TEAM = 6T942SVBY8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3895,7 +3927,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gg.adverts.optimization;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fb.adverts.optimization;
 				PRODUCT_NAME = "Y Te Benh Nhan";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEVELOP;
@@ -3912,10 +3944,10 @@
 				APP_DISPLAY_NAME = "Y Tế Thông Minh";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CUZZ5LX8A8;
+				DEVELOPMENT_TEAM = 6T942SVBY8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3930,7 +3962,7 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gg.adverts.optimization;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fb.adverts.optimization;
 				PRODUCT_NAME = "Y Te Benh Nhan";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEVELOP;

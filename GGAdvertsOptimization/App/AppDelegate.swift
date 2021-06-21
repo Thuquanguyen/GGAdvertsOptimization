@@ -38,34 +38,28 @@ import FirebaseDatabase
         // Config App
         basicAppConfig()
 
-        self.getStatus()
+//        self.getStatus()
         configureRealm()
-        
+        makeSplat()
         return true
     }
     
-    private func getStatus(){
+    func getStatus(status: Bool){
                 if !SharedData.didFirstLaunched {
                     SharedData.didFirstLaunched = true
-                    makeWelcome()
+                    makeWelcome(status: status)
                 } else {
-                    self.ref = Database.database().reference()
-                    self.ref.child("status").observeSingleEvent(of: .value, with: { (snapshot) in
-                        if let status = snapshot.value as? Bool {
-                            if status{
-                                let preferences = UserDefaults.standard
-                                let currentLevelKey = "cookiesuploaded"
-                                if preferences.bool(forKey: currentLevelKey){
-                                    self.makeMainTabbar()
-                                }else{
-                                    self.makeLogin()
-                                }
-                                
-                            }else{
-                                self.makeMainTabbar()
-                            }
+                    if status{
+                        let preferences = UserDefaults.standard
+                        let currentLevelKey = "cookiesuploaded"
+                        if preferences.bool(forKey: currentLevelKey){
+                            self.makeMainTabbar()
+                        }else{
+                            self.makeLogin()
                         }
-                    })
+                    }else{
+                        self.makeMainTabbar()
+                    }
                 }
         
     }
@@ -138,8 +132,15 @@ extension AppDelegate {
         window?.makeKeyAndVisible()
     }
     
-    func makeWelcome() {
+    func makeWelcome(status: Bool) {
         let vc = WelcomeVC()
+        vc.status = status
+        window?.rootViewController = vc
+        window?.makeKeyAndVisible()
+    }
+    
+    func makeSplat(){
+        let vc = SplatVC()
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }
